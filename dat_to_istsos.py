@@ -5,7 +5,7 @@ host = "http://127.0.0.1/istsos"
 service = "meteogr"
 full_path = os.path.abspath("stations_dat/")
 
-for station_file in os.listdir(folder_source):
+for station_file in os.listdir(full_path):
     station_name = station_file.split("_2")[0]
 
     # Use existing script that is already provided
