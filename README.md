@@ -16,3 +16,8 @@ Usage:
 Notes:
 * Default: Selected year is 2020 for all stations in Greece
 * Various changes could be made to the scripts (eg. get data for more years)
+
+Tested on:
+* Ubuntu 20.04.2 LTS
+* Python 3.8.5
+* istSOS 2.4.0-RC4
