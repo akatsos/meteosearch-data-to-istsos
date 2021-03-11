@@ -5,8 +5,12 @@ import csv
 service = 'meteogr'
 url = 'http://127.0.0.1/istsos/wa/istsos/services/' + service + '/procedures'
 
+# Read all the procedures (stations) from the stations.csv file
+# and add them to istSOS
+# http://istsos.org/en/latest/doc/ws_registersensor.html
+
 # Read stations from csv
-with open('stations.csv', mode='r') as stations_file:
+with open('../stations.csv', mode='r') as stations_file:
     stations_reader = csv.DictReader(stations_file)
 
     # Create a procedure for every station

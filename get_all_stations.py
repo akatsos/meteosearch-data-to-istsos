@@ -91,6 +91,10 @@ with open('stations.csv', mode='w') as csv_file:
 
             # If coordinates were provided
             if x and y and z:
-                writer.writerow({'station_id': station[0], 'station_name': station_name_en, 
-                            'geodivision_id': station[1], 'geodivision_name': geodivisions[station[1]],
-                            'X': x, 'Y': y, 'Z': z})
+                writer.writerow({
+                    'station_id': station[0], 
+                    'station_name': station_name_en, 
+                    'geodivision_id': station[1], 
+                    'geodivision_name': geodivisions[station[1]],
+                    'X': x, 'Y': y, 'Z': z
+                    })

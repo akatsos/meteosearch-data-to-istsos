@@ -18,7 +18,11 @@ def _get_datetime_for_file(msm_list):
 # --- --- --- ---
 
 folder_source = 'station_measurements/'
-folder_dest = 'stations_dat/'
+folder_dest = 'istsos/stations_dat/'
+
+# Create destination folder if it doesn't exist
+if not os.path.isdir(folder_dest):
+    os.mkdir(folder_dest)
 
 # For every file in source folder
 for station_file in os.listdir(folder_source):

@@ -3,6 +3,12 @@ import json
 
 url = "http://127.0.0.1/istsos/wa/istsos/services"
 
+# Create a service and add it to istSOS
+# http://istsos.org/en/latest/doc/ws_instances.html
+
+# For http://meteosearch.meteo.gr we need to add some extra
+# units of measurement and an extra observed property
+
 # Create service
 service = {
     "service": "meteogr"
